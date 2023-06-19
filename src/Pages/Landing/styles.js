@@ -1,4 +1,6 @@
 import { createStyles } from "@mantine/core";
+import buildProfile from "../../assets/Images/buildProfile.svg"
+
 export const useStyles = createStyles({
     p1: {
         backgroundColor: "white",
@@ -97,9 +99,37 @@ export const useStyles = createStyles({
 
     container: {
         position: "relative",
-        marginLeft:"320px"
+        marginLeft: "320px"
 
 
     },
+    Container: {
+        // backgroundImage: `linear-gradient(rgba(0,0,1,.5), rgba(0,0,10,.5)),url(${buildProfile})`,
+        backgroundImage: `url(${buildProfile})`,
+        padding: "80px",
+        position: 'relative',
+        "& > *": {
+            position: 'relative',
+            zIndex: 10,
+        },
+        ": after": {
+            content: '""',
+            width: '100%',
+            height: '100%',
+            position: 'absolute',
+            backgroundColor: "rgb(13, 27,57, 0.8)",
+            top: 0,
+            left: 0,
+            zIndex: 0
+        }
+
+    },
+
+    
+    EmployeeContainer:{
+        padding:"50px",
+        backgroundColor: "#F3F3F3",
+
+    }
 
 })

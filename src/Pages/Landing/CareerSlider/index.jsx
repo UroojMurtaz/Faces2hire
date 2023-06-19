@@ -132,7 +132,7 @@ const index = () => {
                   </Text>
                 </Group>
               </Group>
-              <Text mt={"lg"} fz={"sm"} fw={"500"} color="#129307">
+              <Text mt={"lg"} fz={"sm"} fw={"500"} color="#129307" style={{cursor:"pointer"}}>
                 Read more ...
               </Text>
             </Card>

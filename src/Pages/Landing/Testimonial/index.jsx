@@ -7,6 +7,7 @@ import p4 from "../../../assets/Images/p4.png";
 import p5 from "../../../assets/Images/p5.png";
 import { useState } from "react";
 import { useStyles } from "./styles";
+import { useMediaQuery } from "@mantine/hooks";
 
 const index = () => {
   const data = [
@@ -44,7 +45,7 @@ const index = () => {
   const centerIndex = Math.ceil(data.length / 2);
   const { classes } = useStyles();
   const [selectedImage, setSelectedImage] = useState(centerIndex);
-
+  const isMobile=useMediaQuery("(max-width:600px)")
  
   return (
     <Container className={classes.container} size={"full"}>
@@ -64,7 +65,7 @@ const index = () => {
               key={item?.id}
               size={"18px"}
               p={"md"}
-              style={{ width: "50%", lineHeight: "2.2" }}
+              style={{ width: isMobile ? "80%":"50%", lineHeight: "2.2" }}
               color="#03014C"
               align="center"
             >
