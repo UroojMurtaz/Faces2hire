@@ -70,6 +70,7 @@ const index = () => {
      <Text size={"30px"} fw={"bold"} align="center" p={"xl"}>
         How We Help You
       </Text>
+ 
     <Grid className={classes.mainContainer} m={"0"} mt={"-60px"}>
       {data.map((item) => (
         <Grid.Col md={"auto"} key={item.id}>

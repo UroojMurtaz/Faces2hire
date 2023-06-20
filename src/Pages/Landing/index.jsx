@@ -15,6 +15,7 @@ const index = () => {
     <>
       <Slider/>
       {/* <Profile /> */}
+      
       <HelpCards />
       <ChooseUs/>
       <CareerSlider/>
