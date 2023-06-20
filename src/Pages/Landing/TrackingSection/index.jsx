@@ -1,5 +1,5 @@
 import { Container, Grid, Image, Text, Title } from "@mantine/core";
-import trackPic from "../../../assets/images/track.png";
+import trackPic from "../../../assets/Images/track.png";
 import { useMediaQuery } from "@mantine/hooks";
 import {useStyles} from "./styles"
 
