@@ -1,11 +1,11 @@
 import { Container, Group, Image, SimpleGrid, Text } from "@mantine/core";
 import { useStyles } from "./styles";
-import b1 from "../../assets/images/b1.svg";
-import b2 from "../../assets/images/b2.png";
-import b3 from "../../assets/images/b3.png";
-import b4 from "../../assets/images/b4.png";
-import b5 from "../../assets/images/b5.png";
-import b6 from "../../assets/images/b6.png";
+import b1 from "../../assets/Images/b1.svg";
+import b2 from "../../assets/Images/b2.png";
+import b3 from "../../assets/Images/b3.png";
+import b4 from "../../assets/Images/b4.png";
+import b5 from "../../assets/Images/b5.png";
+import b6 from "../../assets/Images/b6.png";
 
 const EmployersUsing = () => {
   const { classes } = useStyles();
