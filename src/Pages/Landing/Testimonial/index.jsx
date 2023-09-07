@@ -69,7 +69,8 @@ const index = () => {
               color="#03014C"
               align="center"
             >
-              "{item?.text}"
+              &quot;{item?.text}&quot;
+              
             </Text>
           )
       )}

@@ -12,28 +12,15 @@ import {
 } from "@mantine/core";
 import HeaderTop from "../Components/Header";
 import AppFooter from "../Components/Footer";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
-export default function AppShellDemo() {
+export default function AppShellDemo({ loginPage }) {
   const theme = useMantineTheme();
-  const [opened, setOpened] = useState(false);
+  const location = useLocation();
+  const isLogin = location.pathname === "/login";
+  const footerContent = isLogin ? "" : <AppFooter />;
   return (
-    <AppShell
-      // styles={{
-      //   main: {
-      //     background:
-      //       theme.colorScheme === "dark"
-      //         ? theme.colors.dark[8]
-      //         : theme.colors.gray[0],
-      //   },
-      // }}
-      footer={
-        // <Footer height={90} p="md"  bg={"#37496F"} fixed={false}>
-        <AppFooter />
-        // </Footer>
-      }
-      header={<HeaderTop />}
-    >
+    <AppShell footer={footerContent} header={<HeaderTop />}>
       <Outlet />
     </AppShell>
   );
