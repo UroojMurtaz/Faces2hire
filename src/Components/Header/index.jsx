@@ -54,8 +54,9 @@ const Index = () => {
               <Menu.Divider />
               <Menu.Item>
                 <Button
-                  label={"Post Job For Free"}
+                  label={"Login"}
                   size={isTablet ? "sm" : "md"}
+                  onClick={() => navigate("/login")}
                 />
               </Menu.Item>
             </Menu.Dropdown>
